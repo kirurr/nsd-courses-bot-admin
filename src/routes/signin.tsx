@@ -36,7 +36,7 @@ function RouteComponent() {
         className="lg:max-w-1/6 mx-auto flex flex-col gap-4"
         onSubmit={handleSubmit}
       >
-        <h1 className="text-2xl font-bold">Sign in</h1>
+        <h1 className="text-2xl font-bold">Вход</h1>
         <div>
           <label className="text-black/70" htmlFor="email">
             Email
@@ -51,7 +51,7 @@ function RouteComponent() {
           <Input name="password" placeholder="password" type="password" />
         </div>
 
-        <Button className="w-fit mx-auto" disabled={isPending}>
+        <Button className="w-fit" disabled={isPending}>
           {isPending && <LoaderCircle className="animate-spin" />} Войти
         </Button>
         <p>{error && error.message}</p>
