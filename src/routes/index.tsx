@@ -140,7 +140,7 @@ export function UserRow({
       <TableCell className="w-1/6 hidden lg:table-cell">
         {user.telegramId}
       </TableCell>
-      <TableCell>@{user.username}</TableCell>
+      <TableCell>{user.username}</TableCell>
       <TableCell className="hidden lg:table-cell">{user.name}</TableCell>
       <TableCell className="hidden lg:table-cell">
         {user.isAccepted ? 'true' : 'false'}

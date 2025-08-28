@@ -42,7 +42,7 @@ async function getUsers(): Promise<User[]> {
     res.rows.map((user) => {
       return {
         telegramId: user.telegram_id,
-        username: user.username,
+        username: `@${user.username}`,
         name: user.name,
         isAccepted: user.is_accepted,
       }
